@@ -1,0 +1,167 @@
+*,*::before,* ::after {
+
+    box-sizing: border-box;
+}
+body{
+
+    margin:0;
+    padding:0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.6;
+    color: #ffffffa2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/img/hero-bg.jpg),
+    linear-gradient(45deg,rgb(136, 233, 8), rgb(12, 143, 250));
+    background-blend-mode:multiply;
+    background-size:cover;
+    background-position: left;
+}
+
+.calculator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin : 0 auto;
+    padding: 1em .5em;
+    border: rgb(0, 102, 128) solid 3px;
+    border-radius: 20px;
+    
+}
+
+.display-container{
+    
+    text-align: right;
+    justify-content: end;
+    width: 100%;
+    margin-bottom: .7em;
+    border-bottom: solid 1px rgb(123, 255, 0);
+    max-width: 200px;
+    
+    overflow-wrap:break-word;
+    
+   
+    
+}
+
+#display{
+
+    display: inline;
+    height : auto;
+    
+}
+
+.buttons-container{
+    align-content: center;
+    justify-items: center;
+
+    display: grid;
+    grid-template: auto auto auto auto / auto auto auto auto;
+    grid-template-areas: 
+
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three multi"
+    "clear comma equals divide"
+    ;
+
+}
+
+.btn{
+
+   font-size: 1rem;
+   color: rgb(221, 0, 92);
+   background-color: rgba(2, 53, 66, 0.295);
+   border: none;
+   margin:.25em;
+   border-radius: 100px;
+
+    width: 40px;
+    height: 40px;    
+    
+    cursor: pointer;
+}
+
+#seven{
+
+    grid-area: seven;
+}
+
+#eight{
+
+    grid-area: eight;
+}
+
+#nine{
+
+    grid-area: nine;
+}
+
+#four{
+
+    grid-area: four;
+}
+
+#five{
+
+    grid-area: five;
+}
+
+#six{
+
+    grid-area: six;
+}
+
+#one{
+
+    grid-area: one;
+}
+
+#two{
+
+    grid-area: two;
+}
+
+#three{
+
+    grid-area: three;
+}
+
+#multiply{
+
+    grid-area: multi;
+}
+
+#minus{
+
+    grid-area: minus;
+}
+
+#plus{
+
+    grid-area: plus;
+}
+
+#divide{
+
+    grid-area: divide;
+}
+
+#clear{
+
+    grid-area: clear;
+}
+
+#comma{
+
+    grid-area: comma;
+}
+
+#equals{
+
+    grid-area: equals;
+}
